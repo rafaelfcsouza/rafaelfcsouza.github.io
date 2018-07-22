@@ -7,4 +7,7 @@ layout: home
 
 Will add some blog entries here in the future...
 
-For now, check my [LinkedIn](http://linkedin.com/in/rafaelfcsouza) ;)
+## Content that made me a better Software Engineer
+
+- [Clean Code](https://www.amazon.de/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+- [How to write a commit message](https://chris.beams.io/posts/git-commit/)

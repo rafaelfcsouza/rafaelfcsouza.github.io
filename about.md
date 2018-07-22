@@ -8,3 +8,7 @@ Experience in many development environments on great companies. Working with opt
 
 [github]: https://github.com/rafaelfcsouza
 [linkedin]: https://linkedin.com/in/rafaelfcsouza
+
+## Content that made me a better Software Engineer
+
+- [How to write a commit message](https://chris.beams.io/posts/git-commit/)
