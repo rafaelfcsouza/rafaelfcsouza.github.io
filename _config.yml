@@ -1,0 +1,17 @@
+# Site settings
+title: Dev Blog
+email: contato@rafaelfcsouza.com.br
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome!
+  This is Rafael's Today I Learned Blog!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: 
+github_username: rafaelfcsouza
+linkedin_username: rafaelfcsouza
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
