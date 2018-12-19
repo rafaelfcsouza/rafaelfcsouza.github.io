@@ -1,3 +1,9 @@
+---
+layout: page
+title: Rafael Souza
+permalink: /cv/
+---
+
 <contato@rafaelfcsouza.com.br>
 
 <http://linkedin.com/in/rafaelfcsouza>
