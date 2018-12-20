@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rafael Souza
+title: CV
 permalink: /cv/
 ---
 
