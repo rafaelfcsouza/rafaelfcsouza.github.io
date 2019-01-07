@@ -34,7 +34,7 @@ Decouple and refactor monolithic architecture to microservice, using Java 8, Spr
 
 `June 2014 - April 2017`
 
-**Telefônica Brasil · Software Engineer Consultant** · Curitiba, Brazil
+**Telefônica Brasil · Software Architect Consultant** · Curitiba, Brazil
 
 Gather client requirements, create solution, and code it with the Operation Support Systems (OSS) development team at Telefonica (previous for GVT). Solutions using Java 6 to 8, Weblogic and Oracle DB for: Fault, Workforce, Inventory Management and Service and Resource Activation.
 
