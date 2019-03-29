@@ -1,14 +1,21 @@
 # Site settings
 title: Rafael Souza
-email: contato@rafaelfcsouza.com.br
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
 github_username: rafaelfcsouza
 linkedin_username: rafaelfcsouza
 
+permalink: pretty
+paginate: 5
+version: 1.0.0
 # Build settings
+# Dependencies
 markdown: kramdown
-theme: minima
+parse_block_html: true
+highlighter: pygments
+theme: jekyll-theme-lanyon
 plugins:
   - jekyll-feed
+  - jekyll-theme-lanyon
+  - jekyll-seo-tag

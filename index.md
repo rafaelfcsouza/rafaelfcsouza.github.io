@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: default
+title: Home
 ---
 
-Mock Server with JSON files configuration: https://github.com/rafaelfcsouza/express-mock-server
+{% include summary.md %}
 
