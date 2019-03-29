@@ -12,10 +12,8 @@ version: 1.0.0
 # Build settings
 # Dependencies
 markdown: kramdown
-parse_block_html: true
 highlighter: pygments
-theme: jekyll-theme-lanyon
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-theme-lanyon
   - jekyll-seo-tag
