@@ -10,7 +10,5 @@ linkedin_username: rafaelfcsouza
 # Build settings
 markdown: kramdown
 theme: minima
-remote_theme: poole/poole
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
