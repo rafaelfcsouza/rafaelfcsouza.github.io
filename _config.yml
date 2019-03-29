@@ -12,3 +12,4 @@ markdown: kramdown
 remote_theme: poole/poole
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
