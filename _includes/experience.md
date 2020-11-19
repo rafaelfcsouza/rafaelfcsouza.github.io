@@ -1,6 +1,6 @@
 ## Experience
 
-`Dec 2020 - Present`
+`Dec 2019 - Present`
 
 **Careem · Engineering Manager** · Berlin, Germany
 
