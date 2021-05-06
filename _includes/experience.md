@@ -2,6 +2,17 @@
 
 `Dec 2019 - Present`
 
+**Soundcloud · Engineering Manager** · Berlin, Germany
+
+* Leading the Identity Team, a cross functional team, reponsible for User Authentication and Authorization.
+* Hiring, developing, and retaining talents in a trusting and safe environment.
+* Establishing a software development processes, tailored specificaly for our needs with experimentation and metrics.
+* Working closely with other engineers and Product Managers to define the team roadmaps.
+* Defining, manage, and report on key performance indicators that measure team performance against organizational objectives.
+* Setting engineering practices that ensure high quality code that conforms to industry wide design patterns and quality standards.
+
+`Dec 2019 - Jan 2020`
+
 **Careem · Engineering Manager** · Berlin, Germany
 
 * Leading the Identity Team, a cross functional team, reponsible for User Authentication and Authorization.
