@@ -16,13 +16,13 @@ As an Engineering Manager at Careem, I led the Identity Team, a cross-functional
 
 As a Senior Software Engineer at Careem, I was part of the Identity team where I worked on decoupling the monolith into authentication, authorization, SSO, and identity management microservices using Springboot, Vert.x, Java, and Kotlin.
 
-### PicPay · Software Architect Consultant (2017-2018) · Vitoria, Brazil
+### PicPay · Consultant (2017-2018) · Vitoria, Brazil
 
-As a Software Architect Consultant at PicPay, I was responsible for decoupling the company's monolithic architecture into microservices using technologies such as Java 8, Spring, Netflix OSS, Docker, AWS, MySQL, and MongoDB.
+As a Consultant at PicPay, I was responsible for decoupling the company's monolithic architecture into microservices using technologies such as Java 8, Spring, Netflix OSS, Docker, AWS, MySQL, and MongoDB.
 
-### Telefônica Brasil · Software Architect Consultant (2014-2017) · Curitiba, Brazil
+### Telefônica Brasil · Consultant (2014-2017) · Curitiba, Brazil
 
-As a Software Architect Consultant at Telefônica Brasil, I gathered client requirements, created solutions, and coded them with the Operation Support Systems development team. The solutions I worked on used Java 6 to 8, Weblogic, and Oracle DB for Fault, Workforce, Inventory Management, and Service and Resource Activation.
+As a Consultant at Telefônica Brasil, I gathered client requirements, created solutions, and coded them with the Operation Support Systems development team. The solutions I worked on used Java 6 to 8, Weblogic, and Oracle DB for Fault, Workforce, Inventory Management, and Service and Resource Activation.
 
 ### NSN · Nokia Solutions and Networks - Senior Software Engineer (2011-2014) · Curitiba, Brazil
 

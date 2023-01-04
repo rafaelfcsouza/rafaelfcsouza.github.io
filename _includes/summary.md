@@ -1,7 +1,3 @@
 ## Summary
 
-Experience in many development environments on great companies. Working with optimism and creativity, an easy going person that tries to create a good work environment. In those years of experience learned how to adapt fast to different places, teams, technologies, and methodologies. A person who is passionate about technology, asks a lot of questions and tries to be innovative using new technologies and concepts.
-
-Currently working as an Engineering Manager in SoundCloud. As part of the User Auth and the Anti-Abuse teams.
-
-In the past had worked as Engineer Manager for Careem also in the Identity and Access Management domain and as Software Architect Consultant, providing services for PicPay, a fin-tech startup, where we re-designed the architecture to microservices.
+As a dynamic and experienced software engineer and engineering leader, I am driven by a passion for innovation and building strong, collaborative engineering teams. With a wealth of experience in diverse development environments, I have a proven track record of success in driving technical direction, delivering high-quality products, and leading and developing top engineering talent. From my current role as the Director of Engineering at WorkMotion to previous positions as an Engineering Manager at SoundCloud and a Software Architect Consultant at PicPay, I have consistently demonstrated my ability to adapt to new technologies, environments, and methodologies. I am also deeply committed to creating positive and productive work cultures that foster creativity and growth.
