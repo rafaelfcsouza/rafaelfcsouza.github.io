@@ -1,0 +1,155 @@
+BasicInfo:
+  FirstName: Rafael
+  LastName: Souza
+  Contacts:
+    - Icon: fas fa-envelope
+      Info: mail@rafaelfcsouza.com
+    - Icon: fas fa-globe
+      Info: <a class="contact__link" href="https://rafaelfcsouza.com" target="_blank">rafaelfcsouza.com</a>
+    - Icon: fas fa-map-marker-alt
+      Info: Berlin, DE
+
+Profile: As a seasoned software engineer and forward-thinking leader, I've navigated roles from hands-on coding to directing engineering, consistently prioritizing modern software development methodologies. I'm recognized for fostering an environment of continuous learning and adaptation, emphasizing iterative development, empirical problem-solving, and a culture of experimentation. My holistic approach goes beyond technical prowess, ensuring a seamless blend of technical architecture with overarching business visions while maintaining a firm commitment to modularity, simplicity, and robust design intrinsic to sustainable software solutions.
+
+Experience:
+  - Employer: WorkMotion 
+    Place: Berlin, DE
+    Positions:
+      - Title: Director of Engineering
+        Date: Dec 2021 - Present
+        Details:
+          - Head a division of four engineering teams, integrating principles like inclusive decision-making, continuous feedback, and ensuring equal voice, leading to heightened team engagement and productivity.
+          - Led two product teams, increasing throughput by more than 60% through effective process optimizations and fostering a collaborative engineering culture.
+          - Collaborated closely with the product team to define and execute product roadmaps, ensuring timely delivery of high-quality products to our customers.
+          - Built a robust and collaborative engineering culture, implementing empirical and feedback-driven development practices to manage system complexity better and promote continuous learning.
+          - Oversaw hiring, development, and retention of top engineering talent, aligning engineering efforts with the overall business strategy.
+        Badges: ['Leadership', 'Strategy', 'Managing Managers', 'Coaching', 'Mentoring', 'Lean', 'Agile']
+  - Employer: SoundCloud
+    Place: Berlin, DE
+    Positions:
+      - Title: Engineering Manager
+        Date: Jan 2021 - Dec 2021
+        Details:
+          - Led the User Authentication and Anti-Abuse teams, spearheading an initiative that filtered more than 80% of the abusive comments in the platform, enhancing user experience and platform integrity.
+          - Fostered a conducive work environment, guiding the team in Agile processes and translating business goals into technical decisions through an iterative and incremental approach.
+          - Actively participated in the company's hiring process, working to develop and retain top talent and promoting a work culture that encourages learning, experimentation, and mastering new technologies.
+        Badges: ['Leadership', 'Agile', 'Scala', 'OAuth2', 'Data Processing']
+  - Employer: Careem 
+    Place: Berlin, DE
+    # Class: "experience__extra_padding"
+    Positions:
+      - Title: Engineering Manager
+        Date: May 2018 - Jan 2021
+        Details:
+          - Headed the Identity Team focusing on User Authentication and Authorization, promoting a cohesive work environment based on trust, learning, and exploration.
+          - Established tailored software development processes, embedding principles of modularity, information hiding, and abstraction to manage system complexity.
+          - Collaborated with Product Managers to define roadmaps, set key performance indicators, and ensure engineering practices led to high-quality code delivery and high stability in system performance.
+        Badges: ['Leadership', 'Agile', 'Java', 'OAuth2', 'AWS']
+  - Employer: PicPay 
+    Place: Vitória, BR
+    Positions:
+      - Title: Consultant 
+        Date: Apr 2017 - Mar 2018
+        Details:
+          - Spearheaded the initiative to decouple the company's monolithic architecture into microservices, leading to a 90% reduction in the load time of the feed, enhancing user engagement and satisfaction.
+          - Utilized technologies such as Java 8, Spring, Netflix OSS, Docker, AWS, MySQL, and MongoDB, to create a modular, easily deployable, and testable system architecture.
+        Badges: ['Java', 'Springboot', 'Docker', 'AWS', 'MySQL', 'MongoDB']
+  - Employer: Telefônica Brasil 
+    Place: Curitiba, BR
+    Positions:
+      - Title: Consultant 
+        Date: Jun 2014 - Apr 2017
+        Details:
+          - Gathered client requirements, created solutions, and coded them with the Operation Support Systems development team, using Java 6 to 8, Weblogic, and Oracle DB for Fault, Workforce, Inventory Management, and Service and Resource Activation.
+        Badges: ['Java', 'Spring', 'Oracle DB', 'Weblogic', 'Web Services']
+  - Employer: NSN - Nokia Solutions and Networks
+    Place: Curitiba, BR
+    Positions:
+      - Title: Senior Software Engineer 
+        Date: Jun 2011 - Jun 2014
+        Details:
+          - Architected solutions for Nokia's Workforce Management tool "myWFM," analyzing client requirements globally and coding frontend and backend solutions using the Java EE stack.
+        Badges: ['Java', 'Spring', 'MySQL', 'Drools', 'Web Services', ]
+  - Employer: Mogai Tecnologia de Informação
+    Place: Vitória, BR
+    # Class: "experience__extra_padding"
+    Positions:
+      - Title: Software Engineer 
+        Date: Feb 2011 - Jun 2011
+        Details:
+          - Prepared software requirements and specifications with clients and code solutions for the "ProEtica Portal" for the Union General Controllership.
+        Badges: ['Java', 'Spring', 'MySQL']
+  - Employer: CSIWAY
+    Place: Curitiba, BR
+    # Class: "experience__extra_padding"
+    Positions:
+      - Title: Software Engineer 
+        Date: Jul 2008 - Feb 2011
+        Details:
+          - Worked on Java development for all State Department of Public Safety systems. Also developed integration solutions for Java/Griaule Biometrics, including acquiring images from scanners and digital cameras and processing those images.
+        Badges: ['Java', 'Oracle DB']
+  
+Education:
+  - Course: Bachelor of Science (BSc), Information Technology · 
+    Place: Pontifícia Universidade Católica do Paraná
+    Date: 2013 - 2016
+
+#References:
+  #- Name: Person One
+    #Relation: Co-worker at Super Cool Company
+    #Contacts:
+    #- Icon: fas fa-phone
+      #Info: +44 123 456 790
+    #- Icon: fas fa-envelope
+      #Info: contact@person-one.com
+    #- Icon: fas fa-map-marker-alt
+      #Info: Melbourne, Australia
+  #- Name: Person Two
+    #Relation: Boss at Super Cool Company
+    #Contacts:
+    #- Icon: fas fa-phone
+      #Info: +44 123 456 791
+    #- Icon: fas fa-envelope
+      #Info: contact@person-two.com
+    #- Icon: fas fa-map-marker-alt
+      #Info: Sydney, Australia
+
+
+Skills:
+  - Family: Programming
+    Items:
+      - Java
+      - Javascript
+      - SQL
+      - Python
+      - Terraform
+  - Family: Frameworks
+    Items:
+      - Springboot
+      - OAuth2
+      - OpenID Connect
+  - Family: Developer Tools
+    Items:
+      - Git
+      - GitHub
+      - Docker
+      - Jenkins
+      - AWS
+      - Kubernetes
+
+Languages:
+  - Name: Portuguese
+    Level: Native
+  - Name: English
+    Level: C2
+  - Name: Spanish
+    Level: B1
+  - Name: German
+    Level: B1
+
+Interests:
+  - Eletronic Music
+  - Table Tennis
+  - Snowboarding
+  - Coffee
+  - Travel
