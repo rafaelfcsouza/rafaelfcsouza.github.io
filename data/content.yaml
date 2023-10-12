@@ -36,7 +36,7 @@ Experience:
         Badges: ['Leadership', 'Agile', 'Scala', 'OAuth2', 'Data Processing']
   - Employer: Careem 
     Place: Berlin, DE
-    # Class: "experience__extra_padding"
+    Class: "experience__extra_padding"
     Positions:
       - Title: Engineering Manager
         Date: May 2018 - Jan 2021
