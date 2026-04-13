@@ -1,11 +1,108 @@
 baseURL = 'https://rafaelfcsouza.com/'
 locale = 'en-us'
+languageCode = 'en-us'
 title = 'Rafael Souza'
+description = 'Personal website and portfolio of Rafael Souza, Software Engineer'
 
+# Enable robots.txt generation
+enableRobotsTXT = true
+
+# Taxonomy configuration
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[params.taxonomy]
+taxonomyCloud = ['tags', 'categories']
+taxonomyCloudTitle = ['Tag Cloud', 'Categories']
+taxonomyPageHeader = ['tags', 'categories']
+
+[markup]
 [markup.goldmark]
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = 'github'
+[markup.goldmark.parser.attribute]
+block = true
 [markup.goldmark.renderer]
 unsafe = true
+[markup.highlight]
+style = 'tango'
+guessSyntax = true
+codeFences = true
+lineNos = false
+
+[imaging]
+resampleFilter = 'CatmullRom'
+quality = 75
+anchor = 'smart'
 
 [module]
 [[module.imports]]
 path = 'github.com/google/docsy'
+[module.hugoVersion]
+extended = true
+min = '0.110.0'
+
+# Site parameters
+[params]
+# Copyright configuration
+[params.copyright]
+authors = 'Rafael Souza'
+from_year = 2024
+
+# Images for social sharing (Twitter cards, etc.)
+# images = ['images/social-share.png']
+
+# GitHub repository for "Edit this page" links
+# Uncomment and set these if you have a repo for your site content
+# github_repo = 'https://github.com/rafaelfcsouza/rafaelfcsouza.github.io'
+# github_subdir = ''
+# github_branch = 'main'
+
+# UI configuration
+[params.ui]
+# Navbar settings
+navbar_logo = false
+sidebar_menu_compact = false
+ul_show = 1
+breadcrumb_disable = false
+footer_about_enable = true
+
+# Reading time display
+[params.ui.readingtime]
+enable = true
+
+# Search configuration (disable until set up)
+offlineSearch = false
+# gcs_engine_id = '' # Google Custom Search Engine ID
+
+# Version menu (disable for personal site)
+version_menu = ''
+
+# Feedback widget (disable for personal site)
+[params.ui.feedback]
+enable = false
+
+# Social and community links
+[params.links]
+
+# User links (shown on left side of footer)
+[[params.links.user]]
+name = 'Email'
+url = 'mailto:website@career.rafaelfcsouza.com'
+icon = 'fa fa-envelope'
+desc = 'Get in touch via email'
+
+# Developer links (shown on right side of footer)
+[[params.links.developer]]
+name = 'GitHub'
+url = 'https://github.com/rafaelfcsouza'
+icon = 'fab fa-github'
+desc = 'Check out my open source work'
+
+[[params.links.developer]]
+name = 'LinkedIn'
+url = 'https://linkedin.com/in/rafaelfcsouza'
+icon = 'fab fa-linkedin'
+desc = 'Connect with me professionally'
