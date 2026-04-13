@@ -1,6 +1,10 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://rafaelfcsouza.com/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Rafael Souza'
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [module]
 [[module.imports]]

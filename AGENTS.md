@@ -1,16 +1,15 @@
 # Site: Hugo-based personal website
 
 ## Framework
-- **Hugo static site generator** (NOT Astro despite `.astro/` directory)
+- **Hugo static site generator**
 - `hugo.toml` contains site config (baseURL, title, locale)
 - Uses **Docsy** theme via Hugo modules (`github.com/google/docsy`)
-- `themes/` contains git submodules: `ananke` and `almeida-cv`
+- `themes/` contains git submodules (ananke, almeida-cv) - may need `git submodule update --init --recursive`
 
 ## Setup
 ```bash
 go install                    # Required for Hugo modules
-git submodule update --init --recursive  # Initialize theme submodules
-npm install -D postcss postcss-cli autoprefixer  # Required for Docsy CSS
+hugo mod get                  # Get all Hugo module dependencies
 hugo mod tidy                 # Sync module dependencies
 ```
 
@@ -20,12 +19,20 @@ hugo                    # Build site (outputs to public/)
 hugo server             # Local dev server at http://localhost:1313
 ```
 
+## Customization
+- **Custom CSS**: Add to `assets/scss/_styles_project.scss` (gets imported by Docsy)
+- **Custom layouts**: Add to `layouts/` directory
+- **Home page**: Create `content/_index.md` (not `content/en/_index.md` for root content)
+
 ## Known issues
-- `.astro/` directory and `.vscode/launch.json` reference Astro (stale from previous setup)
-- `themes/` submodules may not be initialized on first clone
-- `hugo.toml` has placeholder values that need updating
+- Docsy's fixed navbar overlaps content by default - use `.td-home .td-main { padding-top: 5rem; }` in custom CSS
+- Use `[markup.goldmark.renderer.unsafe = true]` in hugo.toml to allow Docsy shortcodes in Markdown
 
 ## Content
 - `content/` - Markdown content files
 - `layouts/` - Custom layout overrides
 - `archetypes/default.md` - New content template
+
+---
+
+**IMPORTANT**: When you discover something new about this repo (commands, quirks, gotchas), update this file to help future agents.
