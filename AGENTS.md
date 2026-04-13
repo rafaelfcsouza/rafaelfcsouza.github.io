@@ -2,12 +2,12 @@
 
 ## Site Proposal
 
-This personal website serves as a digital portfolio presenting myself as a software engineer through unconventional yet technically focused representation.
+This personal website serves as a digital portfolio presenting myself as a software engineer.
 
 ### Core Concept
 - **Introduction**: Software engineer showcasing professional background, skills, and projects
 - **Blog**: Future section for technical articles and sharing knowledge (not yet implemented)
-- **CV as API**: Professional experience and skills presented using Docsy's API Documentation theme, leveraging the Table of Contents on the right and other built-in features
+- **CV**: Professional experience and skills presented using Docsy's API Documentation theme, leveraging the Table of Contents on the right and other built-in features
 
 ## Framework
 - **Hugo static site generator**
