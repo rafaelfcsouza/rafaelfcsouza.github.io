@@ -1,3 +1,13 @@
 .td-home .td-main {
   padding-top: 5rem;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+// Tables full width
+.td-content table:not(.td-initial) {
+  width: 100% !important;
+  display: table !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
 }

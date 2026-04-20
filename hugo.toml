@@ -84,6 +84,17 @@ version_menu = ''
 [params.ui.feedback]
 enable = false
 
+# Main navigation menu
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 10
+
+[[menu.main]]
+name = 'Curriculum Vitae'
+url = '/cv/'
+weight = 20
+
 # Social and community links
 [params.links]
 
