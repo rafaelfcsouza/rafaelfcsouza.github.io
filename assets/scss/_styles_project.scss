@@ -362,22 +362,49 @@ a {
 // CV page (Docsy docs layout)
 // =============================================================================
 
-// Tables full width on CV
+// Tables full width on CV, dark theme always
 .td-content table:not(.td-initial) {
   width: 100% !important;
   display: table !important;
   min-width: 100% !important;
   max-width: 100% !important;
-  background: transparent;
-  border-color: var(--rs-border);
+  background: var(--rs-bg-soft) !important;
+  color: var(--rs-text) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-collapse: collapse;
+  border-radius: var(--rs-radius-sm);
+  overflow: hidden;
+
+  // Kill bootstrap's light-mode table CSS vars
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--rs-text);
+  --bs-table-striped-bg: #141823;
+  --bs-table-striped-color: var(--rs-text);
+  --bs-table-hover-bg: var(--rs-bg-elev);
+  --bs-table-hover-color: var(--rs-text);
+  --bs-table-border-color: var(--rs-border);
 
   th, td {
+    background: transparent !important;
     border-color: var(--rs-border) !important;
-    color: var(--rs-text);
+    color: var(--rs-text) !important;
+    padding: 0.75rem 1rem;
   }
 
   thead th {
-    background: var(--rs-bg-soft);
+    background: var(--rs-bg-elev) !important;
+    color: var(--rs-text) !important;
+    font-weight: 600;
+    border-bottom: 1px solid var(--rs-border) !important;
+  }
+
+  tbody tr {
+    background: transparent !important;
+    color: var(--rs-text) !important;
+
+    &:nth-of-type(odd)  > * { background: transparent !important; color: var(--rs-text) !important; }
+    &:nth-of-type(even) > * { background: #10131b !important; color: var(--rs-text) !important; }
+    &:hover > *             { background: var(--rs-bg-elev) !important; color: var(--rs-text) !important; }
   }
 }
 

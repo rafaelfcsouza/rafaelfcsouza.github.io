@@ -68,7 +68,7 @@ sidebar_menu_compact = true
 ul_show = 1
 breadcrumb_disable = true
 footer_about_enable = true
-showLightDarkModeMenu = true
+showLightDarkModeMenu = false
 
 # Reading time display
 [params.ui.readingtime]

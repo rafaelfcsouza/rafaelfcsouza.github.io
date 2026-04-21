@@ -4,14 +4,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <meta name="theme-color" content="#0b0d12">
 
-{{/* Force dark as default unless user chose otherwise */}}
+{{/* Force dark theme always (no toggle) */}}
 <script>
-  (function() {
-    try {
-      var stored = localStorage.getItem('docsy.prefers-color-scheme');
-      if (!stored) {
-        document.documentElement.setAttribute('data-bs-theme', 'dark');
-      }
-    } catch (e) {}
-  })();
+  document.documentElement.setAttribute('data-bs-theme', 'dark');
+  try { localStorage.setItem('docsy.prefers-color-scheme', 'dark'); } catch (e) {}
 </script>
