@@ -36,6 +36,15 @@ hugo server             # Local dev server at http://localhost:1313
 ## Known issues
 - Docsy's fixed navbar overlaps content by default - use `.td-home .td-main { padding-top: 5rem; }` in custom CSS
 - Use `[markup.goldmark.renderer.unsafe = true]` in hugo.toml to allow Docsy shortcodes in Markdown
+- Custom home layout lives at `layouts/index.html` and renders inside docsy's `baseof.html` (define `main` block). To remove docsy's home padding/width constraints, neutralize `.td-home .td-main` in custom SCSS.
+- Docsy module v0.14.3 is cached at `~/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.14.3/` — read its `layouts/` to discover overridable partials.
+- Head injection hook: `layouts/_partials/hooks/head-end.html` (docsy calls it from `head.html`). Good place for fonts, theme-color, early theme scripts.
+- Dark mode: set `showLightDarkModeMenu = true` in `[params.ui]`. To force dark default on first visit, set `document.documentElement.setAttribute('data-bs-theme','dark')` in head-end when localStorage key is empty.
+
+## Design system (current)
+- Dark-by-default, indigo accent (`#6366f1`). Tokens in `assets/scss/_styles_project.scss` under `:root { --rs-* }`.
+- Fonts: Inter (sans) + JetBrains Mono (mono), loaded via head-end partial.
+- Home sections use `.rs-*` BEM-ish namespace to avoid colliding with docsy (`.td-*`).
 
 ## Content
 - `content/` - Markdown content files

@@ -1,13 +1,467 @@
+// =============================================================================
+// Rafael Souza — custom site styles
+// Dark-by-default, indigo accent, minimalist typography
+// =============================================================================
+
+// --- Fonts --------------------------------------------------------------------
+// Loaded via head-end partial (Inter + JetBrains Mono).
+
+// --- Design tokens ------------------------------------------------------------
+:root {
+  --rs-bg:           #0b0d12;
+  --rs-bg-soft:      #11141b;
+  --rs-bg-elev:      #161a24;
+  --rs-border:       #1f2430;
+  --rs-border-soft:  #171b24;
+  --rs-text:         #e6e8ee;
+  --rs-text-muted:   #9aa3b2;
+  --rs-text-dim:     #6b7383;
+  --rs-accent:       #6366f1;  // indigo-500
+  --rs-accent-hi:    #818cf8;  // indigo-400
+  --rs-accent-lo:    #4f46e5;  // indigo-600
+  --rs-radius:       10px;
+  --rs-radius-sm:    6px;
+  --rs-font-sans:    "Inter", "Inter var", -apple-system, BlinkMacSystemFont,
+                     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --rs-font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --rs-max:          1100px;
+}
+
+// Docsy variable overrides (applied in both light/dark for consistency)
+$primary:   #6366f1;
+$secondary: #4f46e5;
+
+// --- Global base --------------------------------------------------------------
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--rs-bg);
+  color: var(--rs-text);
+  font-family: var(--rs-font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.005em;
+}
+
+code, pre, kbd, samp {
+  font-family: var(--rs-font-mono);
+}
+
+a {
+  color: var(--rs-accent-hi);
+  text-decoration: none;
+  transition: color 120ms ease;
+
+  &:hover {
+    color: #a5b4fc;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// --- Navbar -------------------------------------------------------------------
+.td-navbar {
+  background: rgba(11, 13, 18, 0.75) !important;
+  backdrop-filter: saturate(140%) blur(12px);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  border-bottom: 1px solid var(--rs-border);
+  box-shadow: none !important;
+  min-height: 4rem;
+
+  .navbar-brand,
+  .nav-link {
+    color: var(--rs-text) !important;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .nav-link:hover {
+    color: var(--rs-accent-hi) !important;
+  }
+
+  .navbar-brand__name {
+    font-weight: 600;
+  }
+}
+
+// --- Footer -------------------------------------------------------------------
+.td-footer {
+  background: var(--rs-bg-soft);
+  border-top: 1px solid var(--rs-border);
+  color: var(--rs-text-muted);
+
+  a {
+    color: var(--rs-text-muted);
+    &:hover { color: var(--rs-accent-hi); }
+  }
+}
+
+// =============================================================================
+// Home page (custom hero layout)
+// =============================================================================
+
+// Neutralize docsy's default home padding/width rules when on our custom home
 .td-home .td-main {
-  padding-top: 5rem;
-  max-width: 60%;
+  padding-top: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.rs-home {
+  color: var(--rs-text);
+
+  // Generic section wrapper
+  .rs-section {
+    max-width: var(--rs-max);
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+    border-top: 1px solid var(--rs-border-soft);
+  }
+
+  .rs-section__header {
+    margin-bottom: 3rem;
+  }
+
+  .rs-section__tag {
+    display: inline-block;
+    font-family: var(--rs-font-mono);
+    font-size: 0.8rem;
+    color: var(--rs-accent-hi);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+  }
+
+  .rs-section__title {
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--rs-text);
+  }
+
+  .rs-section__note {
+    color: var(--rs-text-muted);
+    margin-top: 2rem;
+    max-width: 48rem;
+  }
+}
+
+// --- Hero ---------------------------------------------------------------------
+.rs-hero {
+  position: relative;
+  padding: 8rem 1.5rem 6rem;
+  border-top: none;
+  overflow: hidden;
+  background:
+    radial-gradient(1000px 500px at 15% -10%, rgba(99, 102, 241, 0.18), transparent 60%),
+    radial-gradient(800px 400px at 85% 10%, rgba(79, 70, 229, 0.12), transparent 60%);
+}
+
+.rs-hero__inner {
+  max-width: var(--rs-max);
   margin: 0 auto;
 }
 
-// Tables full width
+.rs-hero__eyebrow {
+  font-family: var(--rs-font-mono);
+  font-size: 0.85rem;
+  color: var(--rs-text-muted);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.rs-hero__title {
+  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  max-width: 20ch;
+  color: var(--rs-text);
+}
+
+.rs-accent {
+  color: var(--rs-accent-hi);
+  background: linear-gradient(90deg, var(--rs-accent-hi), #c7d2fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rs-hero__lede {
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  color: var(--rs-text-muted);
+  max-width: 55ch;
+  line-height: 1.6;
+  margin: 0 0 2.5rem;
+}
+
+.rs-hero__cta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.rs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--rs-radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.005em;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  border: 1px solid transparent;
+
+  &:hover { text-decoration: none; transform: translateY(-1px); }
+}
+
+.rs-btn--primary {
+  background: var(--rs-accent);
+  color: #fff !important;
+  border-color: var(--rs-accent);
+  &:hover { background: var(--rs-accent-lo); border-color: var(--rs-accent-lo); color: #fff !important; }
+}
+
+.rs-btn--ghost {
+  background: transparent;
+  color: var(--rs-text) !important;
+  border-color: var(--rs-border);
+  &:hover { border-color: var(--rs-accent); color: var(--rs-accent-hi) !important; }
+}
+
+.rs-hero__socials {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: var(--rs-text-muted);
+    font-size: 1.15rem;
+    transition: color 120ms ease;
+    &:hover { color: var(--rs-accent-hi); }
+  }
+}
+
+// --- Cards grid ---------------------------------------------------------------
+.rs-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.rs-grid--cards {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.rs-card {
+  padding: 1.5rem;
+  background: var(--rs-bg-soft);
+  border: 1px solid var(--rs-border);
+  border-radius: var(--rs-radius);
+  transition: border-color 150ms ease, transform 150ms ease, background 150ms ease;
+
+  &:hover {
+    border-color: var(--rs-accent);
+    transform: translateY(-2px);
+    background: var(--rs-bg-elev);
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.015em;
+    color: var(--rs-text);
+  }
+
+  p {
+    color: var(--rs-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+}
+
+// --- Companies logo row (text-based for now) ----------------------------------
+.rs-logos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--rs-border-soft);
+  border: 1px solid var(--rs-border-soft);
+  border-radius: var(--rs-radius);
+  overflow: hidden;
+
+  li {
+    background: var(--rs-bg-soft);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: var(--rs-font-mono);
+    font-size: 0.95rem;
+    color: var(--rs-text-muted);
+    letter-spacing: -0.005em;
+    transition: color 150ms ease, background 150ms ease;
+
+    &:hover {
+      color: var(--rs-accent-hi);
+      background: var(--rs-bg-elev);
+    }
+  }
+}
+
+// --- Contact section ----------------------------------------------------------
+.rs-section--contact {
+  padding-bottom: 8rem;
+}
+
+.rs-contact__lede {
+  color: var(--rs-text-muted);
+  font-size: 1.05rem;
+  max-width: 50ch;
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.rs-contact__links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--rs-border);
+    border-radius: var(--rs-radius-sm);
+    color: var(--rs-text) !important;
+    background: var(--rs-bg-soft);
+    transition: border-color 120ms ease, color 120ms ease;
+
+    &:hover {
+      border-color: var(--rs-accent);
+      color: var(--rs-accent-hi) !important;
+      text-decoration: none;
+    }
+  }
+}
+
+// =============================================================================
+// CV page (Docsy docs layout)
+// =============================================================================
+
+// Tables full width on CV
 .td-content table:not(.td-initial) {
   width: 100% !important;
   display: table !important;
   min-width: 100% !important;
   max-width: 100% !important;
+  background: transparent;
+  border-color: var(--rs-border);
+
+  th, td {
+    border-color: var(--rs-border) !important;
+    color: var(--rs-text);
+  }
+
+  thead th {
+    background: var(--rs-bg-soft);
+  }
+}
+
+// Tone down docsy content typography for professionalism
+.td-content {
+  h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  h2 {
+    border-bottom: 1px solid var(--rs-border);
+    padding-bottom: 0.3rem;
+    margin-top: 2.5rem;
+  }
+
+  p, li {
+    color: var(--rs-text);
+    line-height: 1.65;
+  }
+
+  code {
+    background: var(--rs-bg-elev);
+    border: 1px solid var(--rs-border);
+    border-radius: 4px;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.85em;
+    color: var(--rs-accent-hi);
+  }
+
+  blockquote {
+    border-left: 3px solid var(--rs-accent);
+    background: var(--rs-bg-soft);
+    color: var(--rs-text-muted);
+    padding: 0.75rem 1rem;
+    border-radius: 0 var(--rs-radius-sm) var(--rs-radius-sm) 0;
+  }
+}
+
+// Sidebar (docsy) — fit dark theme
+.td-sidebar {
+  background: var(--rs-bg-soft) !important;
+  border-right: 1px solid var(--rs-border);
+
+  .td-sidebar__inner {
+    background: transparent;
+  }
+
+  a {
+    color: var(--rs-text-muted) !important;
+    &:hover { color: var(--rs-accent-hi) !important; }
+  }
+
+  .td-sidebar-nav__section-title a,
+  .td-sidebar-link__page {
+    color: var(--rs-text-muted) !important;
+  }
+
+  .td-sidebar-link.tree-root {
+    color: var(--rs-text) !important;
+    font-weight: 600;
+  }
+}
+
+// Right-side TOC
+.td-toc {
+  border-left: 1px solid var(--rs-border);
+
+  a {
+    color: var(--rs-text-muted) !important;
+    font-size: 0.9rem;
+    &:hover,
+    &.active { color: var(--rs-accent-hi) !important; }
+  }
+
+  #TableOfContents ul {
+    border: none;
+  }
+}
+
+// --- Responsive ---------------------------------------------------------------
+@media (max-width: 768px) {
+  .rs-hero { padding: 5rem 1.25rem 4rem; }
+  .rs-home .rs-section { padding: 4rem 1.25rem; }
+  .rs-hero__cta { flex-direction: column; align-items: stretch; }
+  .rs-btn { justify-content: center; }
 }
